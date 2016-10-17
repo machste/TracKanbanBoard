@@ -600,7 +600,7 @@ class KanbanBoardMacro(WikiMacroBase):
 
         js_globals = {
             'KANBAN_BOARD_ID': page_name,
-            'TRAC_PROJECT_NAME': project_name,
+            'TRAC_PROJECT_NAME': 'project/' + project_name,
             'TRAC_USER_NAME': formatter.req.authname,
             'IS_EDITABLE': is_editable
         }
