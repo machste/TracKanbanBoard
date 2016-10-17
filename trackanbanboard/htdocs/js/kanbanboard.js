@@ -25,7 +25,7 @@ function getCookie(c_name)
 
 function checkSession(){
     var check = true;
-    var trac_auth = getCookie('trac_auth');
+    /* var trac_auth = getCookie('trac_auth');
     var trac_form_token = getCookie('trac_form_token');
     var alert_msg = "Session expired. Please relogin.";
     if(trac_auth == null || trac_form_token == null){
@@ -36,6 +36,7 @@ function checkSession(){
         check = false;
         alert(alert_msg);
     }
+    */
     return check;
 };
 
